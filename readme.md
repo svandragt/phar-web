@@ -13,12 +13,16 @@ How to create a phar archive that's a portable PHP executable that can be served
 ├── bootstrap.php
 ├── build
 │   └── index.phar
+├── dist
+│   └── index-*.zip
 └── src
     └── index.php
 
 ```
 
-The `src` directory contains the source files of the PHP project. Box compiles a `build/index.phar`, which is included by the `bootstrap.php` file.
+  - The `src` directory contains the source files of the PHP project. 
+  - Box compiles a `build/index.phar`, which is included by the `bootstrap.php` file.
+  -  The dist task creates a timestamped `dist/index-*.zip` file which can be uncompressed on the production server.
 
 # Building the phar
 
@@ -31,5 +35,8 @@ t crun
 
 # Compile and serve
 t cserve
+
+# Create a zip file for distribution
+t dist
 ```
 

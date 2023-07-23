@@ -18,3 +18,11 @@ cserve() {
 	compile
 	php -S localhost:9000 bootstrap.php
 }
+
+dist() {
+	command mkdir -p dist
+	timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
+	zipfn="dist/index-${timestamp}.zip"
+	zip -r "$zipfn" bootstrap.php build
+	ls "$zipfn"
+}
