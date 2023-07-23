@@ -1,0 +1,20 @@
+bootstrap() {
+	phive install
+}
+
+compile() {
+	.tools/box compile -d src/
+	command mkdir -p build
+	mv src/*.phar build/
+	chmod +x build/*.phar
+}
+
+crun() {
+	compile
+	$PWD/build/index.phar
+}
+
+cserve() {
+	compile
+	php -S localhost:9000 bootstrap.php
+}
