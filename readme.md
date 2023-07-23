@@ -1,4 +1,4 @@
-How to create a phar archive that's a portable PHP executable that can be served as a website (or contains a http server).
+How to create a phar archive that's a portable PHP executable that can be served as a website and/or a commandline application.
 
 # Requirements
 
