@@ -22,7 +22,7 @@ How to create a phar archive that's a portable PHP executable that can be served
 
   - The `src` directory contains the source files of the PHP project. 
   - Box compiles a `build/index.phar`, which is included by the `bootstrap.php` file.
-  -  The dist task creates a timestamped `dist/index-*.zip` file which can be uncompressed on the production server.
+  -  The dist task creates a timestamped `dist/index-*.zip` file which can be uncompressed on the production server or ran from a Docker container.
 
 # Building the phar
 
