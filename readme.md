@@ -1,3 +1,11 @@
+> **Archived.** Maintained tools now do what this project explored:
+>
+> - [FrankenPHP](https://github.com/php/frankenphp) embeds a PHP app and its web server in one static binary.
+> - [static-php-cli](https://github.com/crazywhalecc/static-php-cli) with [phpmicro](https://github.com/easysoft/phpmicro) turns a phar into an executable that runs without PHP installed.
+> - [Box](https://github.com/box-project/box) builds, compresses and signs phars.
+> - [NativePHP](https://github.com/NativePHP/desktop) packages a Laravel app as a desktop app.
+> - [PHP Desktop](https://github.com/cztomczak/phpdesktop) bundles PHP with a Chromium window.
+
 How to create a phar archive that's a portable PHP executable that can be served as a website and/or a commandline application.
 
 # Requirements
